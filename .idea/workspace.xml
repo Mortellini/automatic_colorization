@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="05ffc0d2-a9a3-46bb-b6cf-a44c37350fd9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/automatic_colorization.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/colorization_model_h.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/colorization_model_h_new_8.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/augmentation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/base_color.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/colorization_dataset.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/colorization_model_h.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/colorization_model_h_new.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/eccv16.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/perceptual_loss.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/train.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/palette/color_changer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/palette/color_counter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/palette/colors.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/palette/imageflipper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2lVYaBjnKRQoPSZS5aXHAbVLaaY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.color_counter.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;M:/Uni/BA/automatic_colorization&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="M:\Uni\BA\automatic_colorization" />
+      <recent name="M:\Uni\BA\automatic_colorization\model" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="M:\Uni\BA\automatic_colorization" />
+      <recent name="M:\Uni\BA\automatic_colorization\palette" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.23726.102" />
+        <option value="bundled-python-sdk-5e1850174b45-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.23726.102" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="05ffc0d2-a9a3-46bb-b6cf-a44c37350fd9" name="Changes" comment="" />
+      <created>1725266771233</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1725266771233</updated>
+      <workItem from="1725266773828" duration="486000" />
+      <workItem from="1725267299405" duration="2097000" />
+      <workItem from="1725618451868" duration="1828000" />
+      <workItem from="1725873795841" duration="3510000" />
+      <workItem from="1725961860491" duration="698000" />
+      <workItem from="1726733055664" duration="774000" />
+      <workItem from="1726733864458" duration="5357000" />
+      <workItem from="1727102401033" duration="364000" />
+      <workItem from="1727170893150" duration="539000" />
+      <workItem from="1727171454593" duration="4681000" />
+      <workItem from="1727179286598" duration="4919000" />
+      <workItem from="1727278312472" duration="353000" />
+      <workItem from="1727347387464" duration="5736000" />
+      <workItem from="1727515628418" duration="8771000" />
+      <workItem from="1727530115655" duration="2222000" />
+      <workItem from="1727687948037" duration="3858000" />
+      <workItem from="1727956510350" duration="5784000" />
+      <workItem from="1727986446226" duration="1877000" />
+      <workItem from="1728132382916" duration="10700000" />
+      <workItem from="1728399166480" duration="2247000" />
+      <workItem from="1731392452089" duration="804000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/automatic_colorization$color_counter.coverage" NAME="color_counter Coverage Results" MODIFIED="1726738541076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/palette" />
+  </component>
+</project>
