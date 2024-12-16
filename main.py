@@ -7,7 +7,7 @@ from model.eccv16 import eccv16
 from model.util import *
 
 parser = argparse.ArgumentParser()
-parser.add_argument('-i','--img_path', type=str, default='images/innenstadt/testpic.jpg')
+parser.add_argument('-i','--img_path', type=str, default='images/kiez/20240921_143427.jpg')
 # parser.add_argument('--use_gpu', action='store_true', help='whether to use GPU')
 parser.add_argument('-o','--save_prefix', type=str, default='saved', help='will save into this file with {eccv16.png} suffix')
 opt = parser.parse_args()
@@ -31,5 +31,3 @@ pyplot.imsave('%s_eccv16.png'%opt.save_prefix, out_img_eccv16)
 
 # TODO plots
 # TODO make it work through a folder of images
-# TODO add new layer and add possibility to train it
-# TODO include color palette matching in the colorizing step of the model

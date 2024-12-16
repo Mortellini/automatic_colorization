@@ -4,31 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05ffc0d2-a9a3-46bb-b6cf-a44c37350fd9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/automatic_colorization.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/colorization_model_h.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/colorization_model_h_new_8.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/augmentation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/base_color.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/colorization_dataset.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/colorization_model_h.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/colorization_model_h_new.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/eccv16.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/perceptual_loss.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/train.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/util.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/palette/color_changer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/palette/color_counter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/palette/colors.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/palette/imageflipper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+    <list default="true" id="05ffc0d2-a9a3-46bb-b6cf-a44c37350fd9" name="Changes" comment="Initial Commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/eccv16.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/eccv16.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/train.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +25,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Mortellini&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Mortellini/automatic_colorization.git&quot;,
+    &quot;accountId&quot;: &quot;d76651f0-538c-46f8-ac77-09aca29a9bf4&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -58,6 +50,7 @@
   &quot;keyToString&quot;: {
     &quot;Python.color_counter.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;last_opened_file_path&quot;: &quot;M:/Uni/BA/automatic_colorization&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -74,6 +67,7 @@
       <recent name="M:\Uni\BA\automatic_colorization\model" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="M:\Uni\BA\automatic_colorization\model" />
       <recent name="M:\Uni\BA\automatic_colorization" />
       <recent name="M:\Uni\BA\automatic_colorization\palette" />
     </key>
@@ -81,8 +75,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.23726.102" />
-        <option value="bundled-python-sdk-5e1850174b45-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.23726.102" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-PY-243.22562.180" />
+        <option value="bundled-python-sdk-85c76a3b01b3-9a18a617cbe4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.22562.180" />
       </set>
     </attachedChunks>
   </component>
@@ -114,12 +108,27 @@
       <workItem from="1727986446226" duration="1877000" />
       <workItem from="1728132382916" duration="10700000" />
       <workItem from="1728399166480" duration="2247000" />
-      <workItem from="1731392452089" duration="804000" />
+      <workItem from="1731392452089" duration="1774000" />
+      <workItem from="1734335530760" duration="11535000" />
+      <workItem from="1734363252869" duration="2735000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial Commit">
+      <option name="closed" value="true" />
+      <created>1731394450881</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731394450881</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/automatic_colorization$color_counter.coverage" NAME="color_counter Coverage Results" MODIFIED="1726738541076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/palette" />

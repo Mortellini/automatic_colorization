@@ -15,42 +15,42 @@ from util import *
 # Load pts_in_hull file (contains the 313 quantized ab values)
 pts_in_hull = np.load('pts_in_hull.npy')
 
-for i in range(3):
+for i in range(1):
     print("Durchlauf: " + str(i))
-    # Create your model
-    model = eccv16(pretrained=True, use_finetune_layer=True, use_training=False)
+    # Initialisierung Modell und Optimizer
+    model = eccv16(pretrained=False, use_finetune_layer=True, use_training=True)
+    optimizer = optim.Adam(model.finetune_layer.parameters(), lr=0.0001)
+    # Lade gespeicherte Checkpoint-Daten
+    checkpoint = torch.load('model_checkpoint.pth')
+
+    # Lade die Modellparameter und Optimizer-Parameter
+    model.load_state_dict(checkpoint['model_state_dict'])
+    optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
+
+    # Setze das Modell in den Trainingsmodus
+    model.train()
 
     # Freeze all layers except the fine-tuning layer
     for param in model.parameters():
-        param.requires_grad = True
-
-    # Unfreeze model8 (layer before the fine-tuning layer)
-    for param in model.model8.parameters():
-        param.requires_grad = True
+        param.requires_grad = False
 
     for param in model.finetune_layer.parameters():
         param.requires_grad = True  # Unfreeze fine-tuning layer
 
     # Define current working directory (where the script is running)
     save_dir = os.getcwd()  # This gets the current working directory
-
-    # Define your optimizer and loss function
-    optimizer = optim.Adam(model.finetune_layer.parameters(), lr=0.0001)
-    # Instantiate perceptual loss
-    perceptual_loss = PerceptualLoss(vgg)
-
     # MSE Loss for pixel-wise color comparison
-    mse_loss = nn.MSELoss()
+    mse_loss = nn.MSELoss() # CURENTLY NOT USED
     # Cross Entropy Function
     criterion = nn.CrossEntropyLoss()
 
     # Load your training data
     train_dataset = ColorizationDataset('images/', transform_train)
     print(len(train_dataset))
-    train_loader = DataLoader(train_dataset, batch_size=16, shuffle=True)
+    train_loader = DataLoader(train_dataset, batch_size=10, shuffle=True)
 
     # Training loop
-    num_epochs = 20
+    num_epochs = 10
     model.train()
 
     for epoch in range(num_epochs):
@@ -80,16 +80,18 @@ for i in range(3):
             ground_truth_ab_quantized = ground_truth_ab_quantized.to(output_ab.device)  # Move to the same device as model output
 
             # Compute cross-entropy loss without downsampling
-            print(ground_truth_ab_quantized.shape)
-            print(output_ab.shape)
             loss = F.cross_entropy(output_ab, ground_truth_ab_quantized)
-            print(loss.item())
+
+            if epoch == 0 and i < 2:  # Nur in den ersten zwei Batches des ersten Epochs
+                print(ground_truth_ab_quantized.shape)
+                print(output_ab.shape)
+                print(loss.item())
 
             # Backpropagation
             loss.backward()
 
             # Clip gradients' norm
-            torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
+            torch.nn.utils.clip_grad_norm_(model.finetune_layer.parameters(), max_norm=1.0)
 
             optimizer.step()
 
@@ -101,5 +103,8 @@ for i in range(3):
 
     print("Training Finished")
 
-    # Save the final model after training
-    torch.save(model.state_dict(), os.path.join(save_dir, "colorization_model_all_new.pth"))
+    # Save the final model and optimizer after training
+    torch.save({
+        'model_state_dict': model.state_dict(),
+        'optimizer_state_dict': optimizer.state_dict(),
+    }, 'model_checkpoint.pth')
