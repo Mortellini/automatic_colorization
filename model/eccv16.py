@@ -6,10 +6,10 @@ from IPython import embed
 # Assuming 'BaseColor' is defined somewhere else
 
 # enable this for main
-#from .base_color import *
+from .base_color import *
 
 # enable this for train
-from base_color import *
+#from base_color import *
 
 
 
@@ -150,14 +150,6 @@ class ECCVGenerator(BaseColor):
         conv5_3 = self.model5(conv4_3)
         conv6_3 = self.model6(conv5_3)
         conv7_3 = self.model7(conv6_3)
-        # Apply fine-tuning layer (if enabled), after model8
-        # Print AB values before the fine-tuning layer
-        #print(
-            #f"AB values before fine-tune layer - min: {conv7_3.min().item()}, max: {conv7_3.max().item()}, mean: {conv7_3.mean().item()}")
-
-        # Print AB values before the softmax layer
-        #print(
-            #f"AB values before softmax - min: {conv8_3.min().item()}, max: {conv8_3.max().item()}, mean: {conv8_3.mean().item()}")
 
 
 
@@ -166,11 +158,9 @@ class ECCVGenerator(BaseColor):
         # Apply fine-tuning layer (if enabled)
         if self.use_finetune_layer:
             conv8_3 = self.finetune_layer(conv8_3)
-            # Print AB values after the fine-tuning layer
-            #print(
-                #f"AB values after fine-tune layer - min: {conv7_3.min().item()}, max: {conv7_3.max().item()}, mean: {conv7_3.mean().item()}")
 
-        # During training, return the raw logits for cross-entropy loss
+
+
         # Logits over the 313 quantized color bins
         out_logits = self.upsample4(conv8_3)  # This should have shape (batch_size, 313, 256, 256)
 
@@ -183,7 +173,7 @@ class ECCVGenerator(BaseColor):
             # During training, use raw logits (without softmax) for cross-entropy loss
             output = out_logits
 
-        #print(f"Output shape model: {output.shape}")  # Should be [batch_size, 313, 256, 256] for training
+
         return output
 
 
@@ -203,7 +193,7 @@ def eccv16(pretrained=True, use_finetune_layer=False, use_training=False):
 
         # If fine-tuning layer is used but it's not in the pre-trained state, initialize it
         if use_finetune_layer:
-            # Filter out the fine-tuning layer's weights if not present
+
             # Initialisiert eine fine tune layer, die den gleichen output wie die vorherige layer liefert
             missing_keys = [key for key in model.state_dict().keys() if key.startswith('finetune_layer')]
             if missing_keys:
@@ -246,7 +236,7 @@ def eccv16(pretrained=True, use_finetune_layer=False, use_training=False):
                 #model.load_state_dict(state_dict)
                 print("1")
         else:
-            #model.load_state_dict(state_dict)
+            model.load_state_dict(state_dict)
             print("2")
 
     return model

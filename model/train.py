@@ -50,7 +50,7 @@ for i in range(1):
     train_loader = DataLoader(train_dataset, batch_size=10, shuffle=True)
 
     # Training loop
-    num_epochs = 10
+    num_epochs = 40
     model.train()
 
     for epoch in range(num_epochs):

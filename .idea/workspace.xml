@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05ffc0d2-a9a3-46bb-b6cf-a44c37350fd9" name="Changes" comment="Initial Commit">
+    <list default="true" id="05ffc0d2-a9a3-46bb-b6cf-a44c37350fd9" name="Changes" comment="Big Update - finally working">
+      <change afterPath="$PROJECT_DIR$/colorizer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gray.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/delta_e_plot.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/mse_plot.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/ssim_plot.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistics/MSE.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistics/SSIM.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistics/color_heatmap.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistics/color_quant.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistics/delta_e.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/eccv16.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/eccv16.py" afterDir="false" />
@@ -48,7 +59,9 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Python.SSIM.executor&quot;: &quot;Run&quot;,
     &quot;Python.color_counter.executor&quot;: &quot;Run&quot;,
+    &quot;Python.gray.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
@@ -67,16 +80,72 @@
       <recent name="M:\Uni\BA\automatic_colorization\model" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="M:\Uni\BA\automatic_colorization\model" />
+      <recent name="M:\Uni\BA\automatic_colorization\results\statistics\ssim" />
       <recent name="M:\Uni\BA\automatic_colorization" />
-      <recent name="M:\Uni\BA\automatic_colorization\palette" />
+      <recent name="M:\Uni\BA\automatic_colorization\out_finetune" />
+      <recent name="M:\Uni\BA\automatic_colorization\out_images" />
+      <recent name="M:\Uni\BA\automatic_colorization\model" />
     </key>
+  </component>
+  <component name="RunManager" selected="Python.SSIM">
+    <configuration name="SSIM" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="automatic_colorization" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/statistics" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/statistics/SSIM.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="gray" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="automatic_colorization" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gray.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.SSIM" />
+        <item itemvalue="Python.gray" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-PY-243.22562.180" />
-        <option value="bundled-python-sdk-85c76a3b01b3-9a18a617cbe4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.22562.180" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-PY-243.22562.220" />
+        <option value="bundled-python-sdk-0fc6c617c4bd-9a18a617cbe4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.22562.220" />
       </set>
     </attachedChunks>
   </component>
@@ -111,6 +180,25 @@
       <workItem from="1731392452089" duration="1774000" />
       <workItem from="1734335530760" duration="11535000" />
       <workItem from="1734363252869" duration="2735000" />
+      <workItem from="1734377714280" duration="1297000" />
+      <workItem from="1734425397212" duration="7875000" />
+      <workItem from="1734444005412" duration="2419000" />
+      <workItem from="1735383798155" duration="12570000" />
+      <workItem from="1735550589221" duration="10634000" />
+      <workItem from="1735579165231" duration="3768000" />
+      <workItem from="1735820432952" duration="1923000" />
+      <workItem from="1735897028238" duration="1271000" />
+      <workItem from="1735898313012" duration="2087000" />
+      <workItem from="1736000609254" duration="7858000" />
+      <workItem from="1736084193821" duration="6331000" />
+      <workItem from="1736162537078" duration="5013000" />
+      <workItem from="1736678121552" duration="2602000" />
+      <workItem from="1736683651075" duration="1826000" />
+      <workItem from="1736758855341" duration="3314000" />
+      <workItem from="1736773703810" duration="1478000" />
+      <workItem from="1736940046768" duration="1562000" />
+      <workItem from="1737285876144" duration="940000" />
+      <workItem from="1737289222872" duration="3200000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -120,7 +208,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731394450881</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Big Update - finally working">
+      <option name="closed" value="true" />
+      <created>1734378299243</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1734378299243</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,9 +224,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="Big Update - finally working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Big Update - finally working" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/automatic_colorization$SSIM.coverage" NAME="SSIM Coverage Results" MODIFIED="1736088551114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/statistics" />
     <SUITE FILE_PATH="coverage/automatic_colorization$color_counter.coverage" NAME="color_counter Coverage Results" MODIFIED="1726738541076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/palette" />
+    <SUITE FILE_PATH="coverage/automatic_colorization$gray.coverage" NAME="gray Coverage Results" MODIFIED="1736087212865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
