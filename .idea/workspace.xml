@@ -5,20 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05ffc0d2-a9a3-46bb-b6cf-a44c37350fd9" name="Changes" comment="Big Update - finally working">
-      <change afterPath="$PROJECT_DIR$/colorizer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gray.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plots/delta_e_plot.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plots/mse_plot.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plots/ssim_plot.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/statistics/MSE.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/statistics/SSIM.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/statistics/color_heatmap.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/statistics/color_quant.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/statistics/delta_e.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/eccv16.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/eccv16.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/train.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -221,6 +208,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />

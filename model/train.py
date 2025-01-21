@@ -107,4 +107,4 @@ for i in range(1):
     torch.save({
         'model_state_dict': model.state_dict(),
         'optimizer_state_dict': optimizer.state_dict(),
-    }, 'model_checkpoint.pth')
+    }, 'model/model_checkpoint.pth')
