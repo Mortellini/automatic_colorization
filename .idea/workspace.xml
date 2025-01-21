@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05ffc0d2-a9a3-46bb-b6cf-a44c37350fd9" name="Changes" comment="Readme update" />
+    <list default="true" id="05ffc0d2-a9a3-46bb-b6cf-a44c37350fd9" name="Changes" comment="Big Update - finally working">
+      <change afterPath="$PROJECT_DIR$/colorizer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gray.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/delta_e_plot.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/mse_plot.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/ssim_plot.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistics/MSE.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistics/SSIM.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistics/color_heatmap.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistics/color_quant.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistics/delta_e.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/eccv16.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/eccv16.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/train.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +59,6 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
     &quot;Python.SSIM.executor&quot;: &quot;Run&quot;,
     &quot;Python.color_counter.executor&quot;: &quot;Run&quot;,
     &quot;Python.gray.executor&quot;: &quot;Run&quot;,
@@ -184,10 +199,6 @@
       <workItem from="1736940046768" duration="1562000" />
       <workItem from="1737285876144" duration="940000" />
       <workItem from="1737289222872" duration="3200000" />
-      <workItem from="1737387215480" duration="317000" />
-      <workItem from="1737387540352" duration="817000" />
-      <workItem from="1737462186345" duration="997000" />
-      <workItem from="1737486761581" duration="899000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -205,23 +216,7 @@
       <option name="project" value="LOCAL" />
       <updated>1734378299243</updated>
     </task>
-    <task id="LOCAL-00003" summary="Working Version with statistics and plotting functions.">
-      <option name="closed" value="true" />
-      <created>1737387494453</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1737387494453</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Readme update">
-      <option name="closed" value="true" />
-      <created>1737487651074</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1737487651074</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,9 +225,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Big Update - finally working" />
-    <MESSAGE value="Working Version with statistics and plotting functions." />
-    <MESSAGE value="Readme update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Readme update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Big Update - finally working" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/automatic_colorization$SSIM.coverage" NAME="SSIM Coverage Results" MODIFIED="1736088551114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/statistics" />
