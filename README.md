@@ -7,8 +7,7 @@ Automatic Colorization builds upon the foundational work of Zhang et al., enhanc
 - `colorizer.py`: Main loop for colorizing pictures.
 - `gray.py`: exports gray scale pictures
 - `model/`: Contains the model definition and training loop.
-- `statistics/`: Methods for various statistical calculations.
-- `plots/`: Methods for plotting statistical results.
+
 
 ## Installation
 
