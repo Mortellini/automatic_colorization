@@ -4,10 +4,10 @@ import pandas as pd
 from skimage.metrics import structural_similarity as ssim
 
 # Ordnerpfade
-input_dir = "hk/input"
-base_model_dir = "hk/base_model"
-fine_tune_model_dir = "hk/fine_tune_model"
-output_csv_path = "hk/statistics/ssim/ssim_results.csv"
+input_dir = ""
+base_model_dir = ""
+fine_tune_model_dir = ""
+output_csv_path = ""
 
 # Suffixe für die Modelle
 base_suffix = "_base"

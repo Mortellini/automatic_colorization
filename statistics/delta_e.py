@@ -5,10 +5,10 @@ import numpy as np
 from skimage.color import deltaE_cie76, rgb2lab
 
 # Pfade zu den Verzeichnissen
-input_dir = "results/input"
-base_model_dir = "results/base_model"
-fine_tune_model_dir = "results/fine_tune_model"
-output_csv_path = "results/statistics/delta_e/delta_e_results.csv"
+input_dir = ""
+base_model_dir = ""
+fine_tune_model_dir = ""
+output_csv_path = ""
 
 # Funktion zur Berechnung der Delta-E-Werte
 def calculate_delta_e(image1, image2):
@@ -66,4 +66,4 @@ if not results_df.empty:
 
     print(f"Delta-E-Ergebnisse wurden gespeichert unter: {output_csv_path}")
 else:
-    print("Keine gültigen Ergebnisse gefunden. Überprüfen Sie die Eingabebilder.")
+    print("Keine gültigen Ergebnisse gefunden.")

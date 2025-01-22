@@ -4,10 +4,10 @@ import numpy as np
 import pandas as pd
 
 # Verzeichnisse definieren
-input_dir = "hk/input"
-base_model_dir = "hk/base_model"
-fine_tune_model_dir = "hk/fine_tune_model"
-output_dir = "hk/statistics/mse"
+input_dir = ""
+base_model_dir = ""
+fine_tune_model_dir = ""
+output_dir = ""
 
 # Sicherstellen, dass das Ausgabe-Verzeichnis existiert
 os.makedirs(output_dir, exist_ok=True)
